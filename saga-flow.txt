@@ -1,0 +1,18 @@
+reference:
+
+https://medium.com/@marcelschulze/using-react-native-with-redux-and-redux-saga-a-new-proposal-ba71f151546f#.mddmdjn81
+
+2 ACTION TYPES:
+* UI/System actions get handled by Saga
+* Reducer actions dispatched by Saga
+
+1. User- & System-Actions
+These types of Actions will get dispatched by React Containers, depending on some User input or by some App lifecycle methods (e.g. componentDidMount). These types of Actions will never get handled by the Reducer. Instead they will only work as input for the Saga.
+
+2. Reducer-Actions
+Reducer-Actions are dispatched by Saga’s. Only they will change the state of the App. In addition, every Reducer-Action has exactly one responsibility and will get processed by exactly one Reducer.
+
+With this new proposal you should dispatch one expressive User-Action in your Container (e.g. selectProduct) and zero, one or more expressive Reducer-Actions in your Saga (e.g. setSelectedProduct, setLoadingSpinner, someOtherStuff).
+
+
+UI --> Saga --> Reducer

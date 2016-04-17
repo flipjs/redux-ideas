@@ -1,0 +1,45 @@
+NAMING CONVENTIONS
+
+FUNCTIONS:
+
+// get data from state
+getUsers(state)
+getLoggedUser(state)
+getLoggedUserId(state)
+getLoggedUserToken(state)
+
+// api requests
+fetchUser()
+fetchAllUsers()
+addUser()
+updateUser()
+deleteUser()
+
+
+CONSTANTS:
+
+// prefixes
+_REQUEST
+_SUCCESS
+_FAILURE
+
+// endpoints
+API_USERS = '/api/v1/users'
+API_AUTH: '/api/v1/auth'
+
+// action types
+ADD_USER
+UPDATE_USER
+DELETE_USER
+FETCH_USER
+FETCH_ALL_USERS
+FETCH_ALL_USERS_REQUEST
+FETCH_ALL_USERS_SUCCESS
+FETCH_ALL_USERS_FAILURE
+
+LOGIN_USER
+LOGIN_USER_REQUEST
+LOGIN_USER_SUCCESS
+LOGIN_USER_FAILURE
+LOGOUT_USER
+LOGOUT_USER_REQUEST
