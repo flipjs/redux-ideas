@@ -49,7 +49,7 @@ function stateToProps (state, props) {
 }
 
 const actionsToProps = {
-  fetchUsers // type: FETCH_USERS
+  fetchUsers // type: ON_FETCH_USERS
 }
 
 export default connect(stateToProps, actionsToProps)(UsersTable)
