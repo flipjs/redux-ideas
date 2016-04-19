@@ -1,6 +1,4 @@
-App Directory Structure
-
-app
+.
 ├── api
 │   ├── deleteUser.js
 │   ├── fetchUsers.js
@@ -32,3 +30,4 @@ app
     ├── Table.js
     └── TextInput.js
 
+10 directories, 20 files
