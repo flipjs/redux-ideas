@@ -1,0 +1,30 @@
+Sample App Directory Structure
+
+app
+├── api
+│   ├── deleteUser.js
+│   ├── fetchUsers.js
+│   └── updateUser.js
+├── app-structure.txt
+├── auth
+├── domains
+├── form
+├── notification
+├── users
+│   ├── redux
+│   │   ├── users-redux.js
+│   │   ├── users-sagas.js
+│   │   └── users-selectors.js
+│   ├── UsersTable.css
+│   ├── UsersTable.js
+│   ├── UsersTable.spec.js
+│   ├── UsersView.css
+│   ├── UsersView.js
+│   └── UsersView.spec.js
+├── utils
+└── widgets
+    ├── Button.js
+    ├── FileInput.js
+    ├── Table.js
+    └── TextInput.js
+
