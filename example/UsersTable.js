@@ -45,11 +45,13 @@ function stateToProps (state, props) {
   return {
     users: getUsers(state),
     name: props.name
+    // for computed props, use reselect library
   }
 }
 
+// plain object
 const actionsToProps = {
-  fetchUsers // type: ON_FETCH_USERS
+  fetchUsers // is an action creator that returns { type: ON_FETCH_USERS }
 }
 
 export default connect(stateToProps, actionsToProps)(UsersTable)
