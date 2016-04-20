@@ -1,0 +1,27 @@
+{
+  "name": "redux-flow-structure",
+  "version": "1.0.0",
+  "description": "redux-flow-structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flipjs/redux-flow-structure.git"
+  },
+  "author": "Felipe Apostol <felipe.apostol@zepko.com> (http://www.zepko.com/)",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/flipjs/redux-flow-structure/issues"
+  },
+  "homepage": "https://github.com/flipjs/redux-flow-structure#readme",
+  "devDependencies": {
+    "smart-commit": "^2.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/smart-commit"
+    }
+  }
+}
