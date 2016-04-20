@@ -3,25 +3,35 @@
 import React, { Component, PropTypes } from 'react'
 
 const propTypes = {
-  onRefreshButtonClick: PropTypes.func.isRequired,
+  loadData: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   data: PropTypes.array.isRequired
 }
 
-function DataTable (props) {
-  const handleRefreshButtonClick = (event) => {
-    props.onRefreshButtonClick(event)
+export default class DataTable extends Component {
+  constructor (props) {
+    super(props)
+    this.handleRefreshButtonClick =
+      this.handleRefreshButtonClick.bind(this)
   }
-  return (
-    <div>
-      <Button onClick={handleRefreshButtonClick}
-      <Title name={props.name} />
-      <Table data={props.data} />
-    </div>
-  )
+
+  componentDidMount () {
+    this.props.loadData()
+  }
+
+  handleRefreshButtonClick () {
+    this.props.loadData()
+  }
+
+  render () {
+    return (
+      <div>
+        <Button onClick={this.handleRefreshButtonClick} />
+        <Title name={props.name} />
+        <Table data={props.data} />
+      </div>
+    )
+  }
 }
-
 DataTable.propTypes = propTypes
-
-export default DataTable
 
