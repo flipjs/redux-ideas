@@ -1,13 +1,13 @@
-import fetchUsers from 'fetchUsers'
-import fetchUser from 'fetchUser'
-import updateUser from 'updateUser'
-import deleteUser from 'deleteUser'
+import apiGetAllUsers from 'api-get-all-users'
+import apiGetUser from 'api-get-user'
+import apiUpdateUser from 'api-update-user'
+import apiDeleteUser from 'api-delete-user'
 
 const api = {
-  fetchUsers,
-  fetchUser,
-  updateUser,
-  deleteUser
+  getAllUsers: apiGetAllUsers,
+  getUser: apiGetUser,
+  updateUser: apiUpdateUser,
+  deleteUser: apiDeleteUser
 }
 
 export default api
